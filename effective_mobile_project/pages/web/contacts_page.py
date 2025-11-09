@@ -1,6 +1,7 @@
 from selene import browser, have
 import allure
 
+
 class ContactsChapter:
     def open(self):
         with allure.step('Open site'):

@@ -31,7 +31,6 @@ class LeaveRequestForCall:
         with allure.step('User can type the phone number'):
             browser.element('[class="t-submit"]').click()
 
-
     def modal_window_of_success(self):
         with allure.step('Successfull sended rquest'):
             browser.element('[class="t-form-success-popup__text t-descr t-descr_sm"]').should(have.text(

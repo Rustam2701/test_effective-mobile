@@ -1,6 +1,7 @@
 import allure
 from effective_mobile_project.pages.web.leave_request_page import leave_request_for_call
 
+
 @allure.title('User can send a request for a call')
 def test_leave_request():
     leave_request_for_call.open()
