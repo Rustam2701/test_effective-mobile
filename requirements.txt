@@ -2,3 +2,4 @@ pytest~=9.0.0
 allure-pytest==2.13.2
 selene~=2.0.0rc9
 python-dotenv==1.0.1
+allure-python-commons~=2.13.2
