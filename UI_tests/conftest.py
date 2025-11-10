@@ -1,6 +1,8 @@
 import pytest
+from pathlib import Path
 from selene import browser
 from selenium.webdriver import ChromeOptions
+
 
 @pytest.fixture(scope="session", autouse=True)
 def configure_browser():
@@ -13,5 +15,6 @@ def configure_browser():
 
     browser.config.driver_options = options
     browser.config.timeout = 6.0
+
     yield
     browser.quit()
