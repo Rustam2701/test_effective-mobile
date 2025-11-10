@@ -10,7 +10,9 @@
 
 ## Краткая инструкция (шаги) по сборке контейнера и запуску тестов на удаленной машине
 * Скопируйте проект с Github себе в IDE
-* Соберите контейнер командой '''docker build -t my-tests:chrome .'''
-* ыпвп docker run --rm my-tests:chrome google-chrome --version
+* Соберите контейнер командой `docker build -t my-tests:chrome .`
+* Убедитесь, что терминал не выдал ошибок и сборка контейнера прошла успешно
+* Проверьте версию браузера командой `docker run --rm my-tests:chrome google-chrome --version` (терминал должен выдать ответ набодобии этого - Google Chrome 142.0.7444.134)
+* Запустите тесты командой `docker run --rm -it my-tests:chrome `
 
 
