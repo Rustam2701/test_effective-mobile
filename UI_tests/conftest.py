@@ -1,5 +1,4 @@
 import pytest
-from pathlib import Path
 from selene import browser
 from selenium.webdriver import ChromeOptions
 
